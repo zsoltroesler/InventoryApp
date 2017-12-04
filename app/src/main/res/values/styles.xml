@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- activity_catalog.xml styles -->
+    <style name="EmptyCartImage">
+        <item name="android:layout_width">@dimen/image_size</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="EmptyTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_cart_image</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/padding_10</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="Fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/margin_16</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- activity_details.xml styles -->
+    <style name="DataRequestedDetails">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="DataFilledOutDetails">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:background">@color/textBackground</item>
+    </style>
+    <style name="StockButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="StockDisplayed">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EmailFilledOutDetails">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@color/textBackground</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EmailImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/margin_5</item>
+    </style>
+    <style name="ImageViewDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:padding">@dimen/padding_10</item>
+    </style>
+
+    <!-- activity_editor.xml styles -->
+    <style name="DataRequestedEditor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="DataFilledOutEditor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+    <style name="AddPhotoButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_20</item>
+    </style>
+    <style name="ImageViewEditor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:padding">@dimen/padding_10</item>
+    </style>
+
+    <!-- list_item.xml styles -->
+    <style name="ProductImageList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="ProductNameList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingLeft">@dimen/padding_5</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="ProductPriceList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="ProductQuantityList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/quantity_displayed_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/textBackground</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CartButtonList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/cart_button_size</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_5</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+</resources>

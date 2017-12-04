@@ -1,0 +1,123 @@
+<!-- Layout for the editor -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                style="@style/DataRequestedDetails"
+                android:text="@string/product_name" />
+
+            <TextView
+                android:id="@+id/details_product_name"
+                style="@style/DataFilledOutDetails"
+                tools:text="Product" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                style="@style/DataRequestedDetails"
+                android:text="@string/product_price" />
+
+            <TextView
+                android:id="@+id/details_product_price"
+                style="@style/DataFilledOutDetails"
+                tools:text="Price" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                style="@style/DataRequestedDetails"
+                android:text="@string/product_stock" />
+
+            <Button
+                android:id="@+id/details_button_decrement"
+                style="@style/StockButton"
+                android:text="@string/product_decrement" />
+
+            <TextView
+                android:id="@+id/details_product_quantity"
+                style="@style/StockDisplayed"
+                android:text="@string/product_quantity" />
+
+            <Button
+                android:id="@+id/details_button_increment"
+                style="@style/StockButton"
+                android:text="@string/product_increment" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                style="@style/DataRequestedDetails"
+                android:text="@string/supplier_name" />
+
+            <TextView
+                android:id="@+id/details_supplier_name"
+                style="@style/DataFilledOutDetails"
+                tools:text="Supplier" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                style="@style/DataRequestedDetails"
+                android:text="@string/supplier_email" />
+
+            <TextView
+                android:id="@+id/details_supplier_email"
+                style="@style/EmailFilledOutDetails"
+                tools:text="E-mail address" />
+
+            <ImageButton
+                android:id="@+id/details_imagebutton_email"
+                style="@style/EmailImageButton"
+                android:src="@drawable/ic_icon_email" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/details_product_image"
+            style="@style/ImageViewDetails" />
+
+    </LinearLayout>
+
+</ScrollView>

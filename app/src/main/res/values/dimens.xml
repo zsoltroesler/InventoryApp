@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">100dp</dimen>
+    <dimen name="quantity_displayed_size">40dp</dimen>
+    <dimen name="cart_button_size">52dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/padding_5">
+
+   <ImageView
+       android:id="@+id/list_product_image"
+       style="@style/ProductImageList"
+       android:src="@drawable/ic_insert_photo_black_48dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_5">
+
+        <TextView
+            android:id="@+id/list_product_name"
+            style="@style/ProductNameList"
+            tools:text="Product name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_5">
+
+            <TextView
+                style="@style/ProductPriceList"
+                android:layout_marginRight="@dimen/margin_5"
+                android:text="@string/product_currency" />
+
+            <TextView
+                android:id="@+id/list_product_price"
+                style="@style/ProductPriceList"
+                tools:text="price" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/list_product_quantity"
+        style="@style/ProductQuantityList"
+        tools:text="@string/product_quantity"/>
+
+    <ImageButton
+        android:id="@+id/list_cart_image"
+        style="@style/CartButtonList"
+        android:src="@drawable/ic_add_shopping_cart_black_48dp" />
+
+</LinearLayout>

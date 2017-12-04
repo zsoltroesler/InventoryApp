@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Empty store message -->
+    <string name="empty_store">Store is empty. Please add a new item!</string>
+
+    <!-- Labels -->
+    <string name="product_name">Product name:</string>
+    <string name="product_price">Product price €:</string>
+    <string name="product_currency">€</string>
+    <string name="product_stock">Stock:</string>
+    <string name="product_quantity">0</string>
+    <string name="product_decrement">-</string>
+    <string name="product_increment">+</string>
+    <string name="supplier_name">Supplier name:</string>
+    <string name="supplier_email">Supplier e-mail:</string>
+    <string name="supplier_email_hint">supplier@gmail.com</string>
+
+    <!-- Button texts -->
+    <string name="add_photo">Add photo</string>
+    <string name="change_photo">Change photo</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+
+    <!-- Menu options -->
+    <string name="delete_all_products">Delete all products</string>
+    <string name="save_product">Save product</string>
+    <string name="edit_product">Edit product</string>
+    <string name="delete_product">Delete product</string>
+
+    <!-- Toast messages -->
+    <string name="out_of_stock">Product is out of stock.</string>
+    <string name="add_product_name">Please add product name!</string>
+    <string name="add_product_price">Please add product price!</string>
+    <string name="add_product_stock">Please add product quantity!</string>
+    <string name="add_supplier_name">Please add supplier!</string>
+    <string name="add_supplier_email">Please add a valid email address!</string>
+    <string name="add_product_image">Please add photo to the product!</string>
+    <string name="error_saving_product">Error with saving product.</string>
+    <string name="product_saved">Product successfully saved.</string>
+    <string name="stock_zero">Product stock cannot be less than 0.</string>
+    <string name="product_deleted">Product successfully deleted</string>
+    <string name="error_deleting_product">Error with deleting product</string>
+
+    <!-- Titles -->
+    <string name="editor_activity_title_add_product">Add Product</string>
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+    <string name="details_activity_title">Product Details</string>
+
+    <!-- Dialog box Strings -->
+    <string name="delete_all_dialog_msg">Delete all products?</string>
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
+</resources>
